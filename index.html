@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+<h1> Fiestas R' Us </h1>
+</header>
+<form action="action_page.php" method="post">
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+  </div>
+</form>
+<script>
+    $('#submit').click(someFunctionForLogin);
+    function someFunctionForLogin(){
+        if(/*ajax login success*/) {
+            $('#submit').submit();
+        }
+        else {
+            alert("Login failed")
+        }
+    }
+</script>
+</body>
+</html>
